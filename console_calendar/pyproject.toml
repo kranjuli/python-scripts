@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "console_calendar"
+version = "0.1.0"
+description = "display calendar in the console"
+authors = ["kranjuli"]
+readme = "README.md"
+packages = [
+  { include = "cli_cal" }
+]
+
+[tool.poetry.dependencies]
+python = "^3.12"
+
+[tool.poetry.scripts]
+cli_cal = "cli_cal:main"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
